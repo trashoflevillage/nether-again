@@ -18,6 +18,9 @@
 		"main": [
 			"io.github.trashoflevillage.netheragain.NetherAgain"
 		],
+		"client": [
+			"io.github.trashoflevillage.netheragain.client.NetherAgainClient"
+		],
 		"fabric-datagen": [
 			"io.github.trashoflevillage.netheragain.NetherAgainDataGenerator"
 		]

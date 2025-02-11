@@ -3,9 +3,11 @@
 	"package": "io.github.trashoflevillage.netheragain.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "FluidRendererMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
-	}
+	},
+	"client": [
+		"LavaRenderHandlerMixin"
+	]
 }

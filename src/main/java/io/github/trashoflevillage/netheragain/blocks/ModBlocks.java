@@ -4,9 +4,14 @@ import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.netheragain.blocks.custom.BoomshroomBlock;
 import io.github.trashoflevillage.trashlib.blocks.BlockInitializer;
 import io.github.trashoflevillage.trashlib.items.ItemInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.RenderLayers;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.fluid.LavaFluid;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -25,5 +30,7 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.CRIMSON_FUNGUS)
     );
 
-    public static void register() {}
+    public static void register() {
+
+    }
 }
