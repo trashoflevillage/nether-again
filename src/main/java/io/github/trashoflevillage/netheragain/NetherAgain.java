@@ -1,6 +1,12 @@
 package io.github.trashoflevillage.netheragain;
 
+import eu.midnightdust.lib.config.MidnightConfig;
+import io.github.trashoflevillage.lavaworks.LavaWorks;
+import io.github.trashoflevillage.lavaworks.config.LavaWorksConfig;
 import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
+import io.github.trashoflevillage.netheragain.config.NetherAgainConfig;
+import io.github.trashoflevillage.netheragain.items.ModItemGroups;
+import io.github.trashoflevillage.netheragain.items.ModItems;
 import io.github.trashoflevillage.trashlib.blocks.BlockInitializer;
 import net.fabricmc.api.ModInitializer;
 
@@ -22,5 +28,8 @@ public class NetherAgain implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModBlocks.register();
+		ModItems.register();
+		ModItemGroups.registerItemGroups();
+		MidnightConfig.init(NetherAgain.MOD_ID, NetherAgainConfig.class);
 	}
 }

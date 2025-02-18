@@ -18,6 +18,8 @@ repositories {
 	maven {
 		url = "https://api.modrinth.com/maven"
 	}
+	maven { url "https://maven.terraformersmc.com/releases/" }
+	maven { url = "https://api.modrinth.com/maven" }
 }
 
 fabricApi {
@@ -35,7 +37,12 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "curse.maven:trashlib-1197682:6179382"
+	modImplementation "curse.maven:trashlib-1197682:${project.trashlib_version}"
+	modImplementation "curse.maven:lavaworks-1202533:${project.lavaworks_version}"
+
+	modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
+
+	modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
 }
 
 processResources {
