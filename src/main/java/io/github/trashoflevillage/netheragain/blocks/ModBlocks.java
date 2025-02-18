@@ -16,6 +16,12 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.CRIMSON_FUNGUS)
     );
 
+    public static Block OBSIDIAN_BRICKS = initializer.registerBlock(
+            "obsidian_bricks",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.OBSIDIAN)
+    );
+
     public static void register() {
 
     }

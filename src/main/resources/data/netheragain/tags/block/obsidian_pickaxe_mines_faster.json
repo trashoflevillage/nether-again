@@ -2,6 +2,7 @@
   "values": [
     "minecraft:obsidian",
     "minecraft:ender_chest",
-    "minecraft:enchanting_table"
+    "minecraft:enchanting_table",
+    "netheragain:obsidian_bricks"
   ]
 }

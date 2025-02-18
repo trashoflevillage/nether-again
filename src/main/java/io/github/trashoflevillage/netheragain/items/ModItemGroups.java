@@ -1,6 +1,7 @@
 package io.github.trashoflevillage.netheragain.items;
 
 import io.github.trashoflevillage.netheragain.NetherAgain;
+import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemConvertible;
@@ -17,9 +18,10 @@ public class ModItemGroups {
 
     public static final ItemGroup EQUALLY_AS_FUN_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(NetherAgain.MOD_ID, "netheragain"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.netheragain"))
-                    .icon(() -> new ItemStack(Items.OAK_SAPLING))
+                    .icon(() -> new ItemStack(ModBlocks.OBSIDIAN_BRICKS))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.OBSIDIAN_PICKAXE);
+                        entries.add(ModBlocks.OBSIDIAN_BRICKS);
                     }))
                     .build()
     );
