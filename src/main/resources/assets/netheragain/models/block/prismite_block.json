@@ -1,0 +1,6 @@
+{
+  "parent": "netheragain:block/tintable",
+  "textures": {
+    "tint": "netheragain:block/prismite_block"
+  }
+}

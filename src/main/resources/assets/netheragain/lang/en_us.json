@@ -1,8 +1,10 @@
 {
   "item.netheragain.obsidian_pickaxe": "Obsidian Pickaxe",
+  "item.netheragain.obsidian_pickaxe.description.0": "Mines Obsidian faster than other tools",
   "netheragain.midnightconfig.title": "Nether Again",
   "netheragain.midnightconfig.obsidianPickaxeMiningSpeedMult": "Obsidian Pickaxe Mining Speed",
   "netheragain.midnightconfig.obsidianPickaxeMiningSpeedMult.label.tooltip": "The multiplier that the Obsidian Pickaxe uses when mining obsidian blocks.",
   "block.netheragain.obsidian_bricks": "Obsidian Bricks",
-  "itemgroup.netheragain": "Nether Again"
+  "itemgroup.netheragain": "Nether Again",
+  "block.netheragain.prismite_block": "Prismite Block"
 }

@@ -16,12 +16,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup EQUALLY_AS_FUN_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(NetherAgain.MOD_ID, "netheragain"),
+    public static final ItemGroup NETHER_AGAIN_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(NetherAgain.MOD_ID, "netheragain"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.netheragain"))
                     .icon(() -> new ItemStack(ModBlocks.OBSIDIAN_BRICKS))
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.OBSIDIAN_PICKAXE);
                         entries.add(ModBlocks.OBSIDIAN_BRICKS);
+                        entries.add(ModBlocks.PRISMITE_BLOCK);
                     }))
                     .build()
     );

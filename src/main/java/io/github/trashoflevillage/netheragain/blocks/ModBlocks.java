@@ -22,6 +22,12 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.OBSIDIAN)
     );
 
+    public static Block PRISMITE_BLOCK = initializer.registerBlock(
+            "prismite_block",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.BLUE_ICE).slipperiness(0.6f)
+    );
+
     public static void register() {
 
     }
