@@ -25,9 +25,6 @@ import java.awt.*;
 import java.util.Objects;
 
 public class NetherAgainClient implements ClientModInitializer {
-    public static final Random random = Random.create(100000);
-    public static final SimplexNoiseSampler simplex = new SimplexNoiseSampler(random);
-
     @Override
     public void onInitializeClient() {
         ColorProviderRegistry.BLOCK.register(
