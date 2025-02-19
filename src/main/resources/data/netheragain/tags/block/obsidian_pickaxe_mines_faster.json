@@ -3,6 +3,8 @@
     "minecraft:obsidian",
     "minecraft:ender_chest",
     "minecraft:enchanting_table",
-    "netheragain:obsidian_bricks"
+    "netheragain:obsidian_bricks",
+    "minecraft:respawn_anchor",
+    "minecraft:crying_obsidian"
   ]
 }
