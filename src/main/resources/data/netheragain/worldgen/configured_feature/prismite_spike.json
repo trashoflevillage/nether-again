@@ -1,6 +1,11 @@
 {
-  "type": "netheragain:prismite_spike",
+  "type": "netheragain:crystal_spike",
   "config": {
-
+    "to_place": {
+      "type": "simple_state_provider",
+      "state": {
+        "Name": "netheragain:prismite_block"
+      }
+    }
   }
 }
