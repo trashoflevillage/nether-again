@@ -11,7 +11,7 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/netheragain/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -26,6 +26,9 @@
 		],
 		"modmenu": [
 			"io.github.trashoflevillage.netheragain.config.ModMenuIntegration"
+		],
+		"terrablender": [
+			"io.github.trashoflevillage.netheragain.world.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [
