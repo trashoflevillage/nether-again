@@ -5,7 +5,7 @@ import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
 import io.github.trashoflevillage.netheragain.config.NetherAgainConfig;
 import io.github.trashoflevillage.netheragain.items.ModItemGroups;
 import io.github.trashoflevillage.netheragain.items.ModItems;
-import io.github.trashoflevillage.netheragain.worldgen.ModFeatures;
+import io.github.trashoflevillage.netheragain.worldgen.features.ModFeatures;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

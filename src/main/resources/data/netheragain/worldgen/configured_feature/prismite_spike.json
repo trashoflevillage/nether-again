@@ -1,5 +1,5 @@
 {
-  "type": "netheragain:crystal_spike",
+  "type": "trashlib:crystal_spike",
   "config": {
     "to_place": {
       "type": "simple_state_provider",
