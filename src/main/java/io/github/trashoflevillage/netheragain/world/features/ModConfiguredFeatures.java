@@ -4,13 +4,13 @@ import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
 import io.github.trashoflevillage.trashlib.initializers.ConfiguredFeatureInitializer;
 import io.github.trashoflevillage.trashlib.worldgen.features.TrashlibFeatures;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.SimpleBlockFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+
+import java.util.List;
 
 import static net.minecraft.world.gen.feature.ConfiguredFeatures.createRandomPatchFeatureConfig;
 
@@ -18,6 +18,7 @@ public class ModConfiguredFeatures {
     private static final ConfiguredFeatureInitializer initializer = new ConfiguredFeatureInitializer(NetherAgain.MOD_ID);
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRISMITE_SPIKE = initializer.registerKey("prismite_spike");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_CHROMATIC_FIRE = initializer.registerKey("patch_chromatic_fire");
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
         System.out.println("Running ModConfiguredFeatures boostrap");
@@ -26,6 +27,15 @@ public class ModConfiguredFeatures {
                 PRISMITE_SPIKE,
                 TrashlibFeatures.CRYSTAL_SPIKE,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PRISMITE_BLOCK))
+        );
+
+        register(
+                context,
+                PATCH_CHROMATIC_FIRE,
+                Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(
+                        Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CHROMATIC_FIRE)), List.of(ModBlocks.CHROMARACK)
+                )
         );
     }
 

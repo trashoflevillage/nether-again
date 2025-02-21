@@ -1,0 +1,6 @@
+{
+  "parent": "netheragain:block/tintable_fire_side_alt",
+  "textures": {
+    "fire": "netheragain:block/chromatic_fire_1"
+  }
+}

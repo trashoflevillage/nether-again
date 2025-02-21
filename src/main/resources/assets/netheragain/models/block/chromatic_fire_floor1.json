@@ -1,0 +1,6 @@
+{
+  "parent": "netheragain:block/tintable_fire_floor",
+  "textures": {
+    "fire": "netheragain:block/chromatic_fire_1"
+  }
+}

@@ -2,6 +2,7 @@ package io.github.trashoflevillage.netheragain.blocks;
 
 import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.netheragain.blocks.custom.BoomshroomBlock;
+import io.github.trashoflevillage.netheragain.blocks.custom.ChromaticFireBlock;
 import io.github.trashoflevillage.trashlib.initializers.BlockInitializer;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -33,6 +34,12 @@ public class ModBlocks {
             "chromarack",
             Block::new,
             AbstractBlock.Settings.copy(Blocks.NETHERRACK)
+    );
+
+    public static Block CHROMATIC_FIRE = initializer.register(
+            "chromatic_fire",
+            ChromaticFireBlock::new,
+            AbstractBlock.Settings.copy(Blocks.FIRE)
     );
 
     public static void register() {

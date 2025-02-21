@@ -12,6 +12,7 @@ import net.minecraft.world.gen.structure.Structure;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> OBSIDIAN_PICKAXE_MINES_FASTER = createTag("obsidian_pickaxe_mines_faster");
+        public static final TagKey<Block> CHROMATIC_FIRE_BASE_BLOCKS = createTag("chromatic_fire_base_blocks");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(NetherAgain.MOD_ID, name));

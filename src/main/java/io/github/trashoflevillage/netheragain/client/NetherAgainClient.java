@@ -1,15 +1,28 @@
 package io.github.trashoflevillage.netheragain.client;
 
 import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
+import io.github.trashoflevillage.netheragain.blocks.custom.ChromaticFireBlock;
 import io.github.trashoflevillage.netheragain.util.VoronoiGenerator;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.world.ClientWorld;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.world.World;
 
 import java.awt.*;
 
 public class NetherAgainClient implements ClientModInitializer {
+    private static final Block[] blocksWithTransparency = new Block[] {
+            ModBlocks.CHROMATIC_FIRE
+    };
+
     @Override
     public void onInitializeClient() {
+        for (Block i : blocksWithTransparency)
+            BlockRenderLayerMap.INSTANCE.putBlock(i, RenderLayer.getCutout());
         registerBlockColors();
     }
 
@@ -46,14 +59,26 @@ public class NetherAgainClient implements ClientModInitializer {
                     if (pos != null) {
                         int cellSize = 100;
                         return Color.HSBtoRGB((
-                                (((float)pos.getX() / cellSize) +
-                                ((float)pos.getY() / cellSize) +
-                                ((float)pos.getZ() / cellSize))),
-                                0.4f, 1);
+                                        (((float)pos.getX() / cellSize) +
+                                        ((float)pos.getY() / cellSize) +
+                                        ((float)pos.getZ() / cellSize))),
+                                0.7f, 1);
                     }
                     return -1;
                 },
                 ModBlocks.CHROMARACK
+        );
+
+        ColorProviderRegistry.BLOCK.register(
+                (state, view, pos, tintIndex) ->
+                {
+                    if (pos != null) {
+                        return Color.HSBtoRGB((float)state.get(ChromaticFireBlock.HUE_SHIFT) / 255,
+                                1, 1);
+                    }
+                    return -1;
+                },
+                ModBlocks.CHROMATIC_FIRE
         );
     }
 }
