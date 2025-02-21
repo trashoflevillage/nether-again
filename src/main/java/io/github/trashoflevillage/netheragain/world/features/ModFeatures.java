@@ -1,4 +1,4 @@
-package io.github.trashoflevillage.netheragain.worldgen.features;
+package io.github.trashoflevillage.netheragain.world.features;
 
 import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.trashlib.initializers.FeatureInitializer;
