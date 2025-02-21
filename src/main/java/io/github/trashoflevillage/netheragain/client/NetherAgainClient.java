@@ -73,8 +73,8 @@ public class NetherAgainClient implements ClientModInitializer {
         ColorProviderRegistry.BLOCK.register(
                 (state, view, pos, tintIndex) ->
                 {
-                    if (pos != null && MinecraftClient.getInstance().player != null) {
-                        return Color.HSBtoRGB(((float)(MinecraftClient.getInstance().player.age % 255) / 255),
+                    if (pos != null) {
+                        return Color.HSBtoRGB((float)state.get(ChromaticFireBlock.HUE_SHIFT) / 255,
                                 1, 1);
                     }
                     return -1;

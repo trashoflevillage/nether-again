@@ -2,6 +2,7 @@ package io.github.trashoflevillage.netheragain;
 
 import eu.midnightdust.lib.config.MidnightConfig;
 import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
+import io.github.trashoflevillage.netheragain.blocks.entity.ModBlockEntities;
 import io.github.trashoflevillage.netheragain.config.NetherAgainConfig;
 import io.github.trashoflevillage.netheragain.items.ModItemGroups;
 import io.github.trashoflevillage.netheragain.items.ModItems;
@@ -30,6 +31,7 @@ public class NetherAgain implements ModInitializer {
 		ModItems.register();
 		ModItemGroups.register();
 		ModFeatures.register();
+		ModBlockEntities.registerBlockEntities();
 
 		MidnightConfig.init(NetherAgain.MOD_ID, NetherAgainConfig.class);
 	}
