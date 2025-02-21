@@ -6,5 +6,6 @@
   "netheragain.midnightconfig.obsidianPickaxeMiningSpeedMult.label.tooltip": "The multiplier that the Obsidian Pickaxe uses when mining obsidian blocks.",
   "block.netheragain.obsidian_bricks": "Obsidian Bricks",
   "itemgroup.netheragain": "Nether Again",
-  "block.netheragain.prismite_block": "Prismite Block"
+  "block.netheragain.prismite_block": "Prismite Block",
+  "block.netheragain.chromarack": "Chromarack"
 }

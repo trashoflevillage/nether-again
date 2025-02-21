@@ -29,6 +29,12 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.BLUE_ICE).slipperiness(0.6f).sounds(BlockSoundGroup.AMETHYST_BLOCK)
     );
 
+    public static Block CHROMARACK = initializer.register(
+            "chromarack",
+            Block::new,
+            AbstractBlock.Settings.copy(Blocks.NETHERRACK)
+    );
+
     public static void register() {
 
     }

@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.OBSIDIAN_PICKAXE);
                         entries.add(ModBlocks.OBSIDIAN_BRICKS);
                         entries.add(ModBlocks.PRISMITE_BLOCK);
+                        entries.add(ModBlocks.CHROMARACK);
                     }))
                     .build()
     );
