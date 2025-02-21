@@ -19,6 +19,6 @@ public class ModTerraBlenderAPI implements TerraBlenderApi {
         Regions.register(new ModNetherRegion(Identifier.of(NetherAgain.MOD_ID, "nether"), 2));
 
         SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.NETHER, NetherAgain.MOD_ID,
-                VanillaSurfaceRules.createNetherSurfaceRule());
+                ModMaterialRules.createCustomNetherSurfaceRule());
     }
 }
