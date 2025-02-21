@@ -4,6 +4,7 @@ import io.github.trashoflevillage.netheragain.NetherAgain;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
+import net.minecraft.world.gen.surfacebuilder.VanillaSurfaceRules;
 import terrablender.api.RegionType;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
@@ -15,6 +16,6 @@ public class ModTerraBlenderAPI implements TerraBlenderApi {
         Regions.register(new ModNetherRegion(Identifier.of(NetherAgain.MOD_ID, "nether"), 2));
 
         SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.NETHER, NetherAgain.MOD_ID,
-                MaterialRules.block(Blocks.NETHERRACK.getDefaultState()));
+                VanillaSurfaceRules.createNetherSurfaceRule());
     }
 }

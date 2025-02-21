@@ -45,7 +45,5 @@ public class NetherAgainClient implements ClientModInitializer {
                 },
                 ModBlocks.PRISMITE_BLOCK
         );
-
-
     }
 }
