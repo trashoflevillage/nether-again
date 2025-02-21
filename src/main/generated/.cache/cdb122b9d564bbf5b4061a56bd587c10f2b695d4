@@ -1,2 +1,4 @@
 // 1.21.4	-999999999-01-01T00:00:00	Nether Again/World Gen
-bdf4a6f5adeaf62f39cb3c339d768f017c9b285a data/netheragain/worldgen/biome/prismite_gorge.json
+e972144e58c25dc59b69e1c6363fc6156c8493e8 data/netheragain/worldgen/biome/prismite_gorge.json
+6930f04f3c21b605173bae664918443dc85ae557 data/netheragain/worldgen/configured_feature/prismite_spike.json
+7bb435770622b483683efe676efd66c8d1e46451 data/netheragain/worldgen/placed_feature/prismite_spike.json
