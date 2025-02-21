@@ -39,7 +39,7 @@ public class ModBlocks {
     public static Block CHROMATIC_FIRE = initializer.register(
             "chromatic_fire",
             ChromaticFireBlock::new,
-            AbstractBlock.Settings.copy(Blocks.FIRE)
+            AbstractBlock.Settings.copy(Blocks.FIRE).ticksRandomly()
     );
 
     public static void register() {

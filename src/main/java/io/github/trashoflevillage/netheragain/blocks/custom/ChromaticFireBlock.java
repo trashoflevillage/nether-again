@@ -12,12 +12,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
-import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.tick.TickPriority;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class ChromaticFireBlock extends AbstractFireBlock {
     public static final MapCodec<ChromaticFireBlock> CODEC = createCodec(ChromaticFireBlock::new);
@@ -53,7 +57,6 @@ public class ChromaticFireBlock extends AbstractFireBlock {
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         World world = ctx.getWorld();
         BlockState state = super.getPlacementState(ctx).with(HUE_SHIFT, getHueShiftFromTimeOfDay(world.getTimeOfDay()));
-        world.scheduleBlockTick(ctx.getBlockPos(), state.getBlock(), SCHEDULED_TICK_DELAY);
         return state;
     }
 
@@ -72,6 +75,7 @@ public class ChromaticFireBlock extends AbstractFireBlock {
     @Override
     protected void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         super.scheduledTick(state, world, pos, random);
+        System.out.println("scheduled tick");
         if (state.isOf(ModBlocks.CHROMATIC_FIRE)) {
             world.setBlockState(pos, state.with(HUE_SHIFT, getHueShiftFromTimeOfDay(world.getTimeOfDay())));
             world.scheduleBlockTick(pos, state.getBlock(), SCHEDULED_TICK_DELAY);
@@ -85,5 +89,15 @@ public class ChromaticFireBlock extends AbstractFireBlock {
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(HUE_SHIFT);
+    }
+
+    @Override
+    protected void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        super.randomTick(state, world, pos, random);
+        System.out.println("random tick");
+        if (!world.getBlockTickScheduler().isTicking(pos, state.getBlock())) {
+            System.out.println("now scheduled");
+            world.scheduleBlockTick(pos, state.getBlock(), SCHEDULED_TICK_DELAY);
+        }
     }
 }
