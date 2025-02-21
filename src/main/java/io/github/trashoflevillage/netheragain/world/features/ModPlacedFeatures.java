@@ -9,4 +9,6 @@ public class ModPlacedFeatures {
     private static final PlacedFeatureInitializer initializer = new PlacedFeatureInitializer(NetherAgain.MOD_ID);
 
     public static final RegistryKey<PlacedFeature> PRISMITE_SPIKE = initializer.register("prismite_spike");
+
+    public static void register() {}
 }

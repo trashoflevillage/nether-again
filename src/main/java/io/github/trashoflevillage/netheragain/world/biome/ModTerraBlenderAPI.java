@@ -12,7 +12,7 @@ import terrablender.api.TerraBlenderApi;
 public class ModTerraBlenderAPI implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized() {
-        Regions.register(new ModNetherRegion(Identifier.of(NetherAgain.MOD_ID, "nether"), RegionType.NETHER, 2));
+        Regions.register(new ModNetherRegion(Identifier.of(NetherAgain.MOD_ID, "nether"), 2));
 
         SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.NETHER, NetherAgain.MOD_ID,
                 MaterialRules.block(Blocks.NETHERRACK.getDefaultState()));

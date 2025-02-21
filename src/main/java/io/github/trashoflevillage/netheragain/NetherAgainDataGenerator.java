@@ -11,17 +11,6 @@ import net.minecraft.registry.RegistryKeys;
 public class NetherAgainDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
-		System.out.println("TEST");
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModWorldGenerator::new);

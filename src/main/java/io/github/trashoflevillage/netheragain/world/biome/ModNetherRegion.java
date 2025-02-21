@@ -1,5 +1,6 @@
 package io.github.trashoflevillage.netheragain.world.biome;
 
+import net.minecraft.data.report.BiomeParametersProvider;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
@@ -13,14 +14,21 @@ import terrablender.api.RegionType;
 import java.util.function.Consumer;
 
 public class ModNetherRegion extends Region {
-    public ModNetherRegion(Identifier name, RegionType type, int weight) {
-        super(name, type, weight);
+    public ModNetherRegion(Identifier name, int weight) {
+        super(name, RegionType.NETHER, weight);
     }
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<com.mojang.datafixers.util.Pair<MultiNoiseUtil.NoiseHypercube, RegistryKey<Biome>>> mapper) {
-        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.BASALT_DELTAS, ModBiomes.PRISMITE_GORGE);
-        });
+        this.addBiome(mapper,
+                new MultiNoiseUtil.ParameterRange(0, 0),
+                new MultiNoiseUtil.ParameterRange(0, 0),
+                new MultiNoiseUtil.ParameterRange(0, 0),
+                new MultiNoiseUtil.ParameterRange(0, 0),
+                new MultiNoiseUtil.ParameterRange(0, 0),
+                new MultiNoiseUtil.ParameterRange(0, 0),
+                0.0f,
+                ModBiomes.PRISMITE_GORGE
+        );
     }
 }

@@ -24,7 +24,7 @@ public class ModBiomes {
             Identifier.of(NetherAgain.MOD_ID, "prismite_gorge"));
 
     public static void bootstrap(Registerable<Biome> context) {
-        context.register(PRISMITE_GORGE, prismiteGorge(context));
+        //ontext.register(PRISMITE_GORGE, prismiteGorge(context));
     }
 
     public static Biome prismiteGorge(Registerable<Biome> context) {
