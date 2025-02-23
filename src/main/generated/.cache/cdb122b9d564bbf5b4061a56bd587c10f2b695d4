@@ -1,6 +1,6 @@
 // 1.21.4	-999999999-01-01T00:00:00	Nether Again/World Gen
-baba4189c3b96e46defaecccb9ac07344e4f1112 data/netheragain/worldgen/biome/prismite_gorge.json
-7f1ea9a17c0eb7ec9ec4b76b16a1d7224a0e43ee data/netheragain/worldgen/configured_feature/patch_chromatic_fire.json
+846008454c69f1de3b288510343f566accabb065 data/netheragain/worldgen/biome/prismite_gorge.json
+313b2c95ec1978420a500642df5958ccb23d8bbd data/netheragain/worldgen/configured_feature/patch_chromatic_fire.json
 6930f04f3c21b605173bae664918443dc85ae557 data/netheragain/worldgen/configured_feature/prismite_spike.json
 cafedb5f7b9720daa82c7ece6cd2d1b541b8904a data/netheragain/worldgen/placed_feature/patch_chromatic_fire.json
 7bb435770622b483683efe676efd66c8d1e46451 data/netheragain/worldgen/placed_feature/prismite_spike.json

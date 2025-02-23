@@ -69,7 +69,7 @@ public class ModMaterialRules {
         return MaterialRules.sequence(
                 MaterialRules.condition(MaterialRules.verticalGradient("bedrock_floor", YOffset.getBottom(), YOffset.aboveBottom(5)), BEDROCK),
                 MaterialRules.condition(MaterialRules.not(MaterialRules.verticalGradient("bedrock_roof", YOffset.belowTop(5), YOffset.getTop())), BEDROCK),
-                MaterialRules.condition(materialCondition5, NETHERRACK),
+                MaterialRules.condition(materialCondition5, CHROMARACK),
                 MaterialRules.condition(
                         MaterialRules.biome(BiomeKeys.BASALT_DELTAS),
                         MaterialRules.sequence(
@@ -86,6 +86,22 @@ public class ModMaterialRules {
                                 MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH, CHROMARACK),
                                 MaterialRules.condition(
                                         MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH,
+                                        MaterialRules.sequence(materialRule, MaterialRules.condition(materialCondition12, CHROMARACK), CHROMARACK)
+                                ),
+                                MaterialRules.condition(
+                                        MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6,
+                                        MaterialRules.sequence(materialRule, MaterialRules.condition(materialCondition12, CHROMARACK), CHROMARACK)
+                                ),
+                                MaterialRules.condition(
+                                        MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_30,
+                                        MaterialRules.sequence(materialRule, MaterialRules.condition(materialCondition12, CHROMARACK), CHROMARACK)
+                                ),
+                                MaterialRules.condition(
+                                        MaterialRules.STONE_DEPTH_FLOOR,
+                                        MaterialRules.sequence(materialRule, MaterialRules.condition(materialCondition12, CHROMARACK), CHROMARACK)
+                                ),
+                                MaterialRules.condition(
+                                        materialCondition10,
                                         MaterialRules.sequence(materialRule, MaterialRules.condition(materialCondition12, CHROMARACK), CHROMARACK)
                                 )
                         )

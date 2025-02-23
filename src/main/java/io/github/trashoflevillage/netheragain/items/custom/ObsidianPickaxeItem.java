@@ -1,6 +1,5 @@
 package io.github.trashoflevillage.netheragain.items.custom;
 
-import io.github.trashoflevillage.netheragain.config.NetherAgainConfig;
 import io.github.trashoflevillage.netheragain.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -16,7 +15,7 @@ public class ObsidianPickaxeItem extends MiningToolItem {
 
     @Override
     public float getMiningSpeed(ItemStack stack, BlockState state) {
-        if (state.isIn(ModTags.Blocks.OBSIDIAN_PICKAXE_MINES_FASTER)) return super.getMiningSpeed(stack, state) * NetherAgainConfig.obsidianPickaxeMiningSpeedMult;
+        if (state.isIn(ModTags.Blocks.OBSIDIAN_PICKAXE_MINES_FASTER)) return super.getMiningSpeed(stack, state) * 3;
         return super.getMiningSpeed(stack, state);
     }
 }

@@ -42,7 +42,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation "maven.modrinth:trash-lib:${project.trashlib_version}"
-	modImplementation "curse.maven:lavaworks-1202533:${project.lavaworks_version}"
+	modImplementation "maven.modrinth:lavaworks:${project.lavaworks_version}"
 
 	modApi "com.terraformersmc:modmenu:${project.modmenu_version}"
 

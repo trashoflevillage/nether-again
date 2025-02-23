@@ -38,7 +38,7 @@ public class ModBiomes {
                 .build();
         GenerationSettings.LookupBackedBuilder lookupBackedBuilder = (new GenerationSettings.LookupBackedBuilder(
                 context.getRegistryLookup(RegistryKeys.PLACED_FEATURE), context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER))
-        ).carver(ConfiguredCarvers.NETHER_CAVE).feature(GenerationStep.Feature.VEGETAL_DECORATION, MiscPlacedFeatures.SPRING_LAVA);
+        ).feature(GenerationStep.Feature.VEGETAL_DECORATION, MiscPlacedFeatures.SPRING_LAVA);
         DefaultBiomeFeatures.addDefaultMushrooms(lookupBackedBuilder);
         lookupBackedBuilder
                 .feature(GenerationStep.Feature.UNDERGROUND_DECORATION, NetherPlacedFeatures.SPRING_OPEN)

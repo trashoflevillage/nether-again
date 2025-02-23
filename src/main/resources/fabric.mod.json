@@ -24,9 +24,6 @@
 		"fabric-datagen": [
 			"io.github.trashoflevillage.netheragain.NetherAgainDataGenerator"
 		],
-		"modmenu": [
-			"io.github.trashoflevillage.netheragain.config.ModMenuIntegration"
-		],
 		"terrablender": [
 			"io.github.trashoflevillage.netheragain.world.biome.ModTerraBlenderAPI"
 		]
@@ -38,9 +35,7 @@
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
-		"fabric-api": "*",
-		"trashlib": ">=1.0.4",
-		"midnightlib": ">=1.6.8+1.21.4-fabric"
+		"fabric-api": "*"
 	},
 	"suggests": {
 		"lavaworks": ">=1.3.3"
