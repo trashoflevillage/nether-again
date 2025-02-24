@@ -14,5 +14,5 @@ public class ModItems {
             (s) -> new ObsidianPickaxeItem(ModToolMaterials.OBSIDIAN_PICKAXE, BlockTags.PICKAXE_MINEABLE, 1.0F, -2.8F, s)
     );
 
-    public static void register() {}
+    public static void registerAll() {}
 }

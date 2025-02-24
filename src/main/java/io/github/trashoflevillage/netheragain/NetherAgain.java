@@ -4,7 +4,6 @@ import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
 import io.github.trashoflevillage.netheragain.blocks.entity.ModBlockEntities;
 import io.github.trashoflevillage.netheragain.items.ModItemGroups;
 import io.github.trashoflevillage.netheragain.items.ModItems;
-import io.github.trashoflevillage.netheragain.world.features.ModConfiguredFeatures;
 import io.github.trashoflevillage.netheragain.world.features.ModFeatures;
 import net.fabricmc.api.ModInitializer;
 
@@ -25,11 +24,11 @@ public class NetherAgain implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		ModBlocks.register();
-		ModItems.register();
-		ModItemGroups.register();
-		ModFeatures.register();
-		ModBlockEntities.registerBlockEntities();
+		ModBlocks.registerAll();
+		ModItems.registerAll();
+		ModItemGroups.registerAll();
+		ModFeatures.registerAll();
+		ModBlockEntities.registerAll();
 
 //		MidnightConfig.init(NetherAgain.MOD_ID, NetherAgainConfig.class);
 	}

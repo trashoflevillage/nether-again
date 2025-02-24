@@ -42,7 +42,7 @@ public class ModBlocks {
             AbstractBlock.Settings.copy(Blocks.FIRE).ticksRandomly()
     );
 
-    public static void register() {
+    public static void registerAll() {
 
     }
 }

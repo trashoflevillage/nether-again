@@ -19,6 +19,7 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRISMITE_SPIKE = initializer.registerKey("prismite_spike");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_CHROMATIC_FIRE = initializer.registerKey("patch_chromatic_fire");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MOLE_DEN = initializer.registerKey("mole_den");
 
     public static void boostrap(Registerable<ConfiguredFeature<?, ?>> context) {
         System.out.println("Running ModConfiguredFeatures boostrap");
@@ -36,6 +37,13 @@ public class ModConfiguredFeatures {
                 ConfiguredFeatures.createRandomPatchFeatureConfig(
                         Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CHROMATIC_FIRE)), List.of(ModBlocks.CHROMARACK)
                 )
+        );
+
+        register(
+                context,
+                MOLE_DEN,
+                ModFeatures.MOLE_DEN,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CHROMARACK))
         );
     }
 

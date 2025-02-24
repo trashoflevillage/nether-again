@@ -27,7 +27,7 @@ public class ModItemGroups {
                     .build()
     );
 
-    public static void register() {
+    public static void registerAll() {
 
     }
 

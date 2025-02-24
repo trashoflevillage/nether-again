@@ -20,7 +20,7 @@ public class ModBlockEntities {
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, id, FabricBlockEntityTypeBuilder.<T>create(entityFactory, blocks).build());
     }
 
-    public static void registerBlockEntities() {
+    public static void registerAll() {
 
     }
 }
