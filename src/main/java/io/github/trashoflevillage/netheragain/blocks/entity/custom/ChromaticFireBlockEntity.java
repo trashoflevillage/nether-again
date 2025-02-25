@@ -4,11 +4,8 @@ import io.github.trashoflevillage.netheragain.blocks.custom.ChromaticFireBlock;
 import io.github.trashoflevillage.netheragain.blocks.entity.ModBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityTicker;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 public class ChromaticFireBlockEntity extends BlockEntity {
     public ChromaticFireBlockEntity(BlockPos pos, BlockState state) {
@@ -19,12 +16,12 @@ public class ChromaticFireBlockEntity extends BlockEntity {
         if (world.getTimeOfDay() % 5 == 0) {
             world.setBlockState(
                     pos,
-                    state.with(ChromaticFireBlock.HUE_SHIFT, getHueShiftFromTimeOfDay(world.getTimeOfDay()))
+                    state.with(ChromaticFireBlock.HUE_SHIFT, getHueShiftFromTime(world.getTime()))
             );
         }
     }
 
-    private int getHueShiftFromTimeOfDay(long time) {
+    private int getHueShiftFromTime(long time) {
         return (int)(((time) / 5) % 256);
     }
 }
