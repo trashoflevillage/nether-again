@@ -14,7 +14,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-
     public static final ItemGroup NETHER_AGAIN_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(NetherAgain.MOD_ID, "netheragain"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.netheragain"))
                     .icon(() -> new ItemStack(ModBlocks.OBSIDIAN_BRICKS))
@@ -25,6 +24,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.OBSIDIAN_BRICK_SLAB);
                         entries.add(ModBlocks.PRISMITE_BLOCK);
                         entries.add(ModBlocks.CHROMARACK);
+                        entries.add(ModItems.RAW_DEBRIS);
+                        entries.add(ModItems.PRISMITE);
                     }))
                     .build()
     );

@@ -1,6 +1,7 @@
 package io.github.trashoflevillage.netheragain;
 
 import io.github.trashoflevillage.netheragain.datagen.ModLootTableProvider;
+import io.github.trashoflevillage.netheragain.datagen.ModRecipeProvider;
 import io.github.trashoflevillage.netheragain.datagen.ModWorldGenerator;
 import io.github.trashoflevillage.netheragain.world.biome.ModBiomes;
 import io.github.trashoflevillage.netheragain.world.features.ModConfiguredFeatures;
@@ -16,6 +17,7 @@ public class NetherAgainDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 	}
 

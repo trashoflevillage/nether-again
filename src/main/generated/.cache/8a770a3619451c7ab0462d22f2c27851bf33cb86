@@ -1,0 +1,7 @@
+// 1.21.4	-999999999-01-01T00:00:00	Nether Again/
+3cf377d9625b6d480635a8ff6857b69311f978bb data/netheragain/advancement/recipes/building_blocks/prismite_block.json
+dd6f394ab27e2cf4e944322128a4d2cf24b17f9f data/netheragain/advancement/recipes/misc/netherite_scrap_from_blasting_raw_debris.json
+398ea702f6a0b8bcf85a442f4ebd7d1860dd1135 data/netheragain/advancement/recipes/misc/netherite_scrap_from_smelting_raw_debris.json
+757a9211889ae8dbe0048f4090f473f41a1a2af9 data/netheragain/recipe/netherite_scrap_from_blasting_raw_debris.json
+e46f8bf4265e5e93be90bfe02567475a615a9445 data/netheragain/recipe/netherite_scrap_from_smelting_raw_debris.json
+2cbd95a5b0822a6dec9e819148145b462078d8ce data/netheragain/recipe/prismite_block.json

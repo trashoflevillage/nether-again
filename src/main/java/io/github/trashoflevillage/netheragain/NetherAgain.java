@@ -4,9 +4,11 @@ import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
 import io.github.trashoflevillage.netheragain.blocks.entity.ModBlockEntities;
 import io.github.trashoflevillage.netheragain.items.ModItemGroups;
 import io.github.trashoflevillage.netheragain.items.ModItems;
+import io.github.trashoflevillage.netheragain.lavaworks.ModResourceProviders;
 import io.github.trashoflevillage.netheragain.world.features.ModFeatures;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +31,6 @@ public class NetherAgain implements ModInitializer {
 		ModItemGroups.registerAll();
 		ModFeatures.registerAll();
 		ModBlockEntities.registerAll();
-
-//		MidnightConfig.init(NetherAgain.MOD_ID, NetherAgainConfig.class);
+		if (FabricLoader.getInstance().isModLoaded("lavaworks")) ModResourceProviders.registerAll();
 	}
 }

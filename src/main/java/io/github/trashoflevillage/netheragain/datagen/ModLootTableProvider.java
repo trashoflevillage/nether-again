@@ -1,14 +1,15 @@
 package io.github.trashoflevillage.netheragain.datagen;
 
 import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
+import io.github.trashoflevillage.netheragain.items.ModItems;
+import io.github.trashoflevillage.trashlib.datagen.TrashlibBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModLootTableProvider extends FabricBlockLootTableProvider {
+public class ModLootTableProvider extends TrashlibBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
@@ -19,9 +20,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.OBSIDIAN_BRICKS);
         addDrop(ModBlocks.OBSIDIAN_BRICK_STAIRS);
         addSlabDrops(ModBlocks.OBSIDIAN_BRICK_SLAB);
-    }
-
-    private void addSlabDrops(Block block) {
-        lootTables.put(block.getLootTableKey().orElseThrow(() -> new IllegalStateException("Block " + block + " does not have loot table")), slabDrops(ModBlocks.OBSIDIAN_BRICK_SLAB));
+        addOreDrops(Blocks.ANCIENT_DEBRIS, ModItems.RAW_DEBRIS);
+        addOreDrops(ModBlocks.PRISMITE_BLOCK, ModItems.PRISMITE);
     }
 }

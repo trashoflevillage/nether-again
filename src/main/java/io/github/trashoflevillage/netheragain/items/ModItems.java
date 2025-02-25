@@ -14,5 +14,17 @@ public class ModItems {
             (s) -> new ObsidianPickaxeItem(ModToolMaterials.OBSIDIAN_PICKAXE, BlockTags.PICKAXE_MINEABLE, 1.0F, -2.8F, s)
     );
 
+    public static final Item RAW_DEBRIS = initializer.register(
+            "raw_debris",
+            Item::new,
+            new Item.Settings().fireproof()
+    );
+
+    public static final Item PRISMITE = initializer.register(
+            "prismite",
+            Item::new,
+            new Item.Settings()
+    );
+
     public static void registerAll() {}
 }

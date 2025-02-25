@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite",
+    "netheragain:prismite"
+  ],
+  "result": {
+    "count": 1,
+    "id": "netheragain:prismite_block"
+  }
+}

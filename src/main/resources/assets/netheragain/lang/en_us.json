@@ -9,5 +9,7 @@
   "block.netheragain.obsidian_brick_slab": "Obsidian Brick Slab",
   "itemgroup.netheragain": "Nether Again",
   "block.netheragain.prismite_block": "Prismite Block",
-  "block.netheragain.chromarack": "Chromarack"
+  "block.netheragain.chromarack": "Chromarack",
+  "item.netheragain.raw_debris": "Debris Chunk",
+  "item.netheragain.prismite": "Prismite"
 }
