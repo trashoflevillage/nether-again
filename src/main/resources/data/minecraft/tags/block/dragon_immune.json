@@ -1,5 +1,7 @@
 {
   "values": [
-    "netheragain:obsidian_bricks"
+    "netheragain:obsidian_bricks",
+    "netheragain:obsidian_brick_stairs",
+    "netheragain:obsidian_brick_slab"
   ]
 }

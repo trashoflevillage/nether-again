@@ -1,7 +1,7 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "netheragain:item/prismite_block",
+    "model": "netheragain:block/prismite_block",
     "tints": [
       {
         "type": "minecraft:constant",

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "netheragain:item/chromarack"
+    "model": "netheragain:block/chromarack"
   }
 }

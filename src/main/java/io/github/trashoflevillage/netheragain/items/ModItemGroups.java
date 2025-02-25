@@ -21,6 +21,8 @@ public class ModItemGroups {
                     .entries(((displayContext, entries) -> {
                         entries.add(ModItems.OBSIDIAN_PICKAXE);
                         entries.add(ModBlocks.OBSIDIAN_BRICKS);
+                        entries.add(ModBlocks.OBSIDIAN_BRICK_STAIRS);
+                        entries.add(ModBlocks.OBSIDIAN_BRICK_SLAB);
                         entries.add(ModBlocks.PRISMITE_BLOCK);
                         entries.add(ModBlocks.CHROMARACK);
                     }))

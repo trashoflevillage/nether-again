@@ -4,9 +4,7 @@ import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.netheragain.blocks.custom.BoomshroomBlock;
 import io.github.trashoflevillage.netheragain.blocks.custom.ChromaticFireBlock;
 import io.github.trashoflevillage.trashlib.initializers.BlockInitializer;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
 
 public class ModBlocks {
@@ -21,6 +19,18 @@ public class ModBlocks {
     public static Block OBSIDIAN_BRICKS = initializer.register(
             "obsidian_bricks",
             Block::new,
+            AbstractBlock.Settings.copy(Blocks.OBSIDIAN)
+    );
+
+    public static Block OBSIDIAN_BRICK_STAIRS = initializer.register(
+            "obsidian_brick_stairs",
+            (p) -> new StairsBlock(ModBlocks.OBSIDIAN_BRICKS.getDefaultState(), p),
+            AbstractBlock.Settings.copy(Blocks.OBSIDIAN)
+    );
+
+    public static Block OBSIDIAN_BRICK_SLAB = initializer.register(
+            "obsidian_brick_slab",
+            SlabBlock::new,
             AbstractBlock.Settings.copy(Blocks.OBSIDIAN)
     );
 

@@ -1,6 +1,8 @@
 {
   "values": [
     "netheragain:obsidian_bricks",
+    "netheragain:obsidian_brick_stairs",
+    "netheragain:obsidian_brick_slab",
     "netheragain:prismite_block",
     "netheragain:chromarack"
   ]

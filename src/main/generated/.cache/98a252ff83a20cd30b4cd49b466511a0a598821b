@@ -1,3 +1,5 @@
 // 1.21.4	-999999999-01-01T00:00:00	Nether Again/Block Loot Tables
 5f3b7dfb76cace5d2e059e04745695eaf5ceaf75 data/netheragain/loot_table/blocks/chromarack.json
+cf4f1b189869c304c62279ef85568d6b5a269f5b data/netheragain/loot_table/blocks/obsidian_brick_slab.json
+0194f40c0db3b93a616b3cd761fbf4c035201e00 data/netheragain/loot_table/blocks/obsidian_brick_stairs.json
 aca472a2d3c40bf471942802203a8e753d7407dc data/netheragain/loot_table/blocks/obsidian_bricks.json

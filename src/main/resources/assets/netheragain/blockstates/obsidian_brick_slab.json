@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "netheragain:block/obsidian_brick_slab"
+    },
+    "type=double": {
+      "model": "netheragain:block/obsidian_bricks"
+    },
+    "type=top": {
+      "model": "netheragain:block/obsidian_brick_slab_top"
+    }
+  }
+}

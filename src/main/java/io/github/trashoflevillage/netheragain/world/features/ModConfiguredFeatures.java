@@ -38,13 +38,6 @@ public class ModConfiguredFeatures {
                         Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CHROMATIC_FIRE)), List.of(ModBlocks.CHROMARACK)
                 )
         );
-
-        register(
-                context,
-                MOLE_DEN,
-                ModFeatures.MOLE_DEN,
-                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CHROMARACK))
-        );
     }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,
