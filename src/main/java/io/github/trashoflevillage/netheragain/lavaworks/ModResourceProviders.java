@@ -1,7 +1,7 @@
 package io.github.trashoflevillage.netheragain.lavaworks;
 
 import io.github.trashoflevillage.lavaworks.LavaworksResourceProviders;
-import io.github.trashoflevillage.lavaworks.lavacolorproviders.LavaworksResourceProvider;
+import io.github.trashoflevillage.lavaworks.resourceprovider.LavaworksResourceProvider;
 import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.netheragain.lavaworks.resourceproviders.PrismaticResourceProvider;
 import net.minecraft.util.Identifier;

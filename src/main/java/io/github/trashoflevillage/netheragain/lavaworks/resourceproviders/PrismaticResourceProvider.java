@@ -1,6 +1,6 @@
 package io.github.trashoflevillage.netheragain.lavaworks.resourceproviders;
 
-import io.github.trashoflevillage.lavaworks.lavacolorproviders.LavaworksResourceProvider;
+import io.github.trashoflevillage.lavaworks.resourceprovider.LavaworksResourceProvider;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ColorHelper;
