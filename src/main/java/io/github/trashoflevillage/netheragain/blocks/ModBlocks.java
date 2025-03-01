@@ -37,7 +37,7 @@ public class ModBlocks {
     public static Block PRISMITE_BLOCK = initializer.register(
             "prismite_block",
             Block::new,
-            AbstractBlock.Settings.copy(Blocks.BLUE_ICE).slipperiness(0.6f).sounds(BlockSoundGroup.AMETHYST_BLOCK)
+            AbstractBlock.Settings.copy(Blocks.BLUE_ICE).requiresTool().slipperiness(0.6f).sounds(BlockSoundGroup.AMETHYST_BLOCK)
     );
 
     public static Block CHROMARACK = initializer.register(
