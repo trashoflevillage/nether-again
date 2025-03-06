@@ -5,16 +5,13 @@ import io.github.trashoflevillage.netheragain.blocks.custom.BoomshroomBlock;
 import io.github.trashoflevillage.netheragain.blocks.custom.ChromaticFireBlock;
 import io.github.trashoflevillage.trashlib.initializers.BlockInitializer;
 import net.minecraft.block.*;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.sound.BlockSoundGroup;
 
-public class ModBlocks {
-    private static final BlockInitializer initializer = new BlockInitializer(NetherAgain.MOD_ID);
+import java.util.ArrayList;
 
-    public static Block BOOMSHROOM = initializer.register(
-            "boomshroom",
-            BoomshroomBlock::new,
-            AbstractBlock.Settings.copy(Blocks.CRIMSON_FUNGUS)
-    );
+public class ModBlocks {
+    public static final BlockInitializer initializer = new BlockInitializer(NetherAgain.MOD_ID);
 
     public static Block OBSIDIAN_BRICKS = initializer.register(
             "obsidian_bricks",
@@ -49,10 +46,15 @@ public class ModBlocks {
     public static Block CHROMATIC_FIRE = initializer.register(
             "chromatic_fire",
             ChromaticFireBlock::new,
-            AbstractBlock.Settings.copy(Blocks.FIRE).ticksRandomly()
+            AbstractBlock.Settings.copy(Blocks.FIRE).ticksRandomly(),
+            false
     );
 
     public static void registerAll() {
 
+    }
+
+    public static ArrayList<ItemConvertible> getRegisteredItems() {
+        return initializer.getRegisteredItems();
     }
 }

@@ -4,7 +4,10 @@ import io.github.trashoflevillage.netheragain.NetherAgain;
 import io.github.trashoflevillage.netheragain.items.custom.ObsidianPickaxeItem;
 import io.github.trashoflevillage.trashlib.initializers.ItemInitializer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.registry.tag.BlockTags;
+
+import java.util.ArrayList;
 
 public class ModItems {
     private static final ItemInitializer initializer = new ItemInitializer(NetherAgain.MOD_ID);
@@ -27,4 +30,8 @@ public class ModItems {
     );
 
     public static void registerAll() {}
+
+    public static ArrayList<ItemConvertible> getRegisteredItems() {
+        return initializer.getRegisteredItems();
+    }
 }

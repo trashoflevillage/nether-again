@@ -2,6 +2,7 @@ package io.github.trashoflevillage.netheragain;
 
 import io.github.trashoflevillage.netheragain.blocks.ModBlocks;
 import io.github.trashoflevillage.netheragain.blocks.entity.ModBlockEntities;
+import io.github.trashoflevillage.netheragain.entities.ModEntities;
 import io.github.trashoflevillage.netheragain.items.ModItemGroups;
 import io.github.trashoflevillage.netheragain.items.ModItems;
 import io.github.trashoflevillage.netheragain.lavaworks.LavaworksIntegration;
@@ -31,6 +32,7 @@ public class NetherAgain implements ModInitializer {
 		ModItemGroups.registerAll();
 		ModFeatures.registerAll();
 		ModBlockEntities.registerAll();
+		ModEntities.registerAll();
 		if (FabricLoader.getInstance().isModLoaded("lavaworks")) LavaworksIntegration.registerAll();
 	}
 }
